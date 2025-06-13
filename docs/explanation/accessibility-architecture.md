@@ -49,3 +49,43 @@ A selection of applications on Ubuntu Desktop such as [App Center](https://githu
 | App Center               | Flutter       | [Flutter API](https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility) |
 | Software and Updates     | GTK3          | [ATK](https://docs.gtk.org/atk/) |
 
+
+
+## Hardware interfaces for assistive technologies
+
+### USB 
+
+Ubuntu Desktop supports USB out of the box. 
+
+In Ubuntu, kernel USB drivers handle communications with USB devices such as, for example, `usbhid` which provides support for USB Human Interface Devices (HID) class. Kernel supports all [standard USB classes](https://www.usb.org/defined-class-codes).
+
+`udev` is a device manager in Ubuntu that detects, adds and removed devices. `udev` stores the information about detected USB devices in the `/dev` directory.
+
+If your device conforms to a USB class, it will be assigned a /dev entry and recognized correctly.
+
+#### USB device requirements
+
+You can use USB to connect assistive devices for input/output such as Braille displays, sip-and-puff, foot pedals.
+
+To be able to work on Ubuntu properly, a USB device must:
+
+* use a standard USB class 
+* provide a proper USB descriptor so that Ubuntu can identify it
+* not require proprietary drivers
+
+If the device uses a custom class, it must provide a `udev` .rules file instead so that Ubuntu can identify it correctly, see [udev documentation](https://www.man7.org/linux/man-pages/man7/udev.7.html) 
+
+### Bluetooth 
+
+Ubuntu Desktop supports Bluetooth out of the box. [BlueZ](https://www.bluez.org/) is the official Bluetooth stack for Linux distributions, including Ubuntu Desktop.
+
+BlueZ implements various Bluetooth profiles such as HID, A2DP, HFP, SPP, and others. See [BlueZ supported profiles](https://www.bluez.org/profiles/). If a device is compliant with one of the supported profiles, BlueZ automatically detects, pairs, and exposes it as an input device on Linux. 
+
+#### Bluetooth device requirements
+
+You can use Bluetooth to connect wireless assistive devices such as switch control devices or head trackers.
+
+To be able to work on Ubuntu properly, a Bluetooth device must:
+
+* use HID for input devices 
+* use A2DP/HFP for audio output
