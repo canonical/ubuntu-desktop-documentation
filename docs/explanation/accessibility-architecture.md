@@ -81,6 +81,10 @@ Ubuntu Desktop supports Bluetooth out of the box. [BlueZ](https://www.bluez.org/
 
 BlueZ implements various Bluetooth profiles such as HID, A2DP, HFP, SPP, and others. See [BlueZ supported profiles](https://www.bluez.org/profiles/). If a device is compliant with one of the supported profiles, BlueZ automatically detects, pairs, and exposes it as an input device on Linux. 
 
+:::{warning}
+While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack involves many dependencies on the kernel, hardware, drivers, and userspace levels. If you experience issues with your Bluetooth devices, consult the [Hardware problems](https://help.ubuntu.com/stable/ubuntu-help/bluetooth.html.en#problems) section or create a [thread on the Discourse](https://discourse.ubuntu.com/c/support-and-help/306) with a detailed description of your problem.
+:::
+
 #### Bluetooth device requirements
 
 You can use Bluetooth to connect wireless assistive devices such as switch control devices or head trackers.
