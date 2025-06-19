@@ -80,6 +80,6 @@ use-an-on-screen-keyboard
 ### See also
 
 * {ref}`what-is-the-menu-key`
-* {ref}`accessibility-architecture`
+* {ref}`accessibility-stack`
 
 

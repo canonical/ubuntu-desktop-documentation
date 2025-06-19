@@ -1,5 +1,5 @@
-(accessibility-architecture)=
-# Architecture of the accessibility stack
+(accessibility-stack)=
+# Accessibility stack
 
 ## Software Interfaces for assistive technologies
 
@@ -51,7 +51,6 @@ A selection of applications on Ubuntu Desktop such as [App Center](https://githu
 | Software and Updates     | GTK3          | [ATK](https://docs.gtk.org/atk/) |
 
 
-
 ## Hardware interfaces for assistive technologies
 
 ### USB 
@@ -78,20 +77,15 @@ If the device uses a custom class, it must provide a `udev` .rules file instead 
 
 ### Bluetooth 
 
-While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack is complex and consists of many dependencies on the kernel, firmwave, middleware, and userspace levels. This complex set of dependencies makes it difficult to guarantee consistent compatibility with Bluetooth devices.
+While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack is complex and consists of many dependencies on the kernel, firmwave, middleware, and userspace levels. This complex set of dependencies makes it difficult to guarantee consistent compatibility with Bluetooth devices. For an in-depth explanation of Ubuntu's hardware architecture, see {ref}`hardware-stack`.
 
-[BlueZ](https://www.bluez.org/) is the official Bluetooth stack for Linux distributions, including Ubuntu Desktop.
+Ubuntu uses BlueZ as its core Bluetooth stack. 
 
-BlueZ implements various Bluetooth profiles such as HID, A2DP, HFP, SPP, and others. See [BlueZ supported profiles](https://www.bluez.org/profiles/). If a device is compliant with one of the supported profiles, BlueZ automatically detects, pairs, and exposes it as an input device on Linux. 
+To be able to work on Desktop, a device must:
 
-#### Bluetooth device requirements
-
-You can use Bluetooth to connect wireless assistive devices such as switch control devices or head trackers.
-
-To be able to work on Ubuntu properly, a Bluetooth device must:
-
-* use HID for input devices 
-* use A2DP/HFP for audio output
+- be HCI-compliant
+- have a corrseponding firmare provided by the manufacturer as part of the `linux-firmware` package
+- use of the [profiles supported by BlueZ](https://www.bluez.org/profiles/).
 
 ## See also
 
