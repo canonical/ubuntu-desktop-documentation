@@ -8,4 +8,5 @@ These guides accompany you through the complete Ubuntu Desktop operations lifecy
 log-in-using-a-smart-card
 enable-smart-cards-in-snapped-browsers
 accessibility/index
+troubleshoot/index
 :::
