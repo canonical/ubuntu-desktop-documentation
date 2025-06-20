@@ -5,7 +5,7 @@
 
 ### Kernel modules
 
-`bluetooth` is a kernel module that implements manages core functionality of the Bluetooth stack and implements core Bluetooth protocols. It does not directly interact with hardware but acts as an abstraction layer for hardware drivers.
+`bluetooth` is a kernel module that manages core functionality of the Bluetooth stack and implements core Bluetooth protocols. It does not directly interact with hardware but acts as an abstraction layer for hardware drivers.
 
 `btusb` is a kernel module that acts as a generic hardware driver. It provides support for Bluetooth devices connected via USB. It depends on `bluetooth` for its core functionality. `btusb` is the module that detects the device and loads its firmware.
 

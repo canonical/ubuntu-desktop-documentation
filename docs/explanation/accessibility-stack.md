@@ -59,7 +59,7 @@ Ubuntu Desktop supports USB out of the box.
 
 In Ubuntu, kernel USB drivers handle communications with USB devices such as, for example, `usbhid` which provides support for USB Human Interface Devices (HID) class. Kernel supports all [standard USB classes](https://www.usb.org/defined-class-codes).
 
-`udev` is a device manager in Ubuntu that detects, adds and removed devices. `udev` stores the information about detected USB devices in the `/dev` directory.
+`udev` is a device manager in Ubuntu that detects, adds and removes devices. `udev` provides access to the detected USB devices in the `/dev` directory.
 
 If your device conforms to a USB class, it will be assigned a `/dev` entry and recognized correctly.
 
@@ -84,7 +84,7 @@ Ubuntu uses BlueZ as its core Bluetooth stack.
 To be able to work on Desktop, a device must:
 
 - be HCI-compliant
-- have a corrseponding firmare provided by the manufacturer as part of the `linux-firmware` package
+- have a corresponding firmare provided by the manufacturer as part of the `linux-firmware` package
 - use the [profiles supported by BlueZ](https://www.bluez.org/profiles/).
 
 ## See also
