@@ -61,7 +61,7 @@ In Ubuntu, kernel USB drivers handle communications with USB devices such as, fo
 
 `udev` is a device manager in Ubuntu that detects, adds and removed devices. `udev` stores the information about detected USB devices in the `/dev` directory.
 
-If your device conforms to a USB class, it will be assigned a /dev entry and recognized correctly.
+If your device conforms to a USB class, it will be assigned a `/dev` entry and recognized correctly.
 
 #### USB device requirements
 
@@ -73,11 +73,11 @@ To be able to work on Ubuntu properly, a USB device must:
 * provide a proper USB descriptor so that Ubuntu can identify it
 * not require proprietary drivers
 
-If the device uses a custom class, it must provide a `udev` .rules file instead so that Ubuntu can identify it correctly, see [udev documentation](https://www.man7.org/linux/man-pages/man7/udev.7.html) 
+If the device uses a custom class, it must provide a `udev` `.rules` file instead so that Ubuntu can identify it correctly. See [udev documentation](https://www.man7.org/linux/man-pages/man7/udev.7.html) 
 
 ### Bluetooth 
 
-While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack is complex and consists of many dependencies on the kernel, firmwave, middleware, and userspace levels. This complex set of dependencies makes it difficult to guarantee consistent compatibility with Bluetooth devices. For an in-depth explanation of Ubuntu's hardware architecture, see {ref}`hardware-stack`.
+While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack is complex and consists of many dependencies on the kernel, firmwave, middleware, and userspace levels. This complex set of dependencies makes it difficult to guarantee consistent compatibility with all Bluetooth devices. For an in-depth explanation of Ubuntu's hardware architecture, see {ref}`hardware-stack`.
 
 Ubuntu uses BlueZ as its core Bluetooth stack. 
 
@@ -85,7 +85,7 @@ To be able to work on Desktop, a device must:
 
 - be HCI-compliant
 - have a corrseponding firmare provided by the manufacturer as part of the `linux-firmware` package
-- use of the [profiles supported by BlueZ](https://www.bluez.org/profiles/).
+- use the [profiles supported by BlueZ](https://www.bluez.org/profiles/).
 
 ## See also
 
