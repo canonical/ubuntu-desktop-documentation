@@ -3,6 +3,8 @@
 
 ## Software Interfaces for assistive technologies
 
+This section provides details on the components that make up Ubuntu Desktop's accessibility stack, their roles, interdependencies, and how they all work together. There are also recommendations for developers and integrators who want to create applications that will work with Desktop's default assistive solutions as well as developers who want to create their own assitive solutions that would work on Desktop.
+
 ### AT-SPI
 
 The Assistive Technology Service Provider Interface (AT-SPI) is a platform-neutral framework for bi-directional communication between assistive technologies (AT) and applications. 
