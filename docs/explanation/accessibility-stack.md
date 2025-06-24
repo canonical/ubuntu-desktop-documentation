@@ -77,7 +77,7 @@ If the device uses a custom class, it must provide a `udev` `.rules` file instea
 
 ### Bluetooth 
 
-While the Ubuntu Desktop team continuously tries to improve the experience with Bluetooth, the Bluetooth stack is complex and consists of many dependencies on the kernel, firmwave, middleware, and userspace levels. This complex set of dependencies makes it difficult to guarantee consistent compatibility with all Bluetooth devices. For an in-depth explanation of Ubuntu's hardware architecture, see {ref}`hardware-stack`.
+While the Ubuntu Desktop team works continuously to enhance the Bluetooth experience, the Bluetooth stack involves a complex interplay of multiple components such as firmware, kernel modules, drivers, and userspace applications. This complex set of dependencies makes it difficult to guarantee consistent compatibility with all Bluetooth devices. For an in-depth explanation of Ubuntu's hardware architecture, see {ref}`hardware-stack`.
 
 Ubuntu uses BlueZ as its core Bluetooth stack. 
 
