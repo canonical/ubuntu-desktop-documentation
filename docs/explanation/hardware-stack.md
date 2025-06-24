@@ -1,6 +1,8 @@
 (hardware-stack)=
 # Hardware stack
 
+This section provides detailed explanations about various components that comprise Ubuntu Desktop hardware stack, a role of each component and how they work together. Where applicable, links to documentation on common issues with specific components are included.
+
 ## Bluetooth
 
 ### Kernel modules
