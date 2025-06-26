@@ -4,8 +4,8 @@ Our explanatory and conceptual guides are written to provide a better understand
 
 :::{toctree}
 :maxdepth: 2
-
-accessibility-architecture
+hardware-stack
+accessibility-stack
 what-is-the-menu-key
 :::
 
